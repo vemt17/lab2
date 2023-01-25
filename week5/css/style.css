@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --green:#24f976;
+    --green:#32cd32;
+    --white:#f0fff0;
+    --black:#080808;
 }
 
 *{
@@ -15,7 +17,7 @@
 
 *::selection{
     background:var(--green);
-    color:#333;
+    color:var(--black);
 }
 
 html{
@@ -28,7 +30,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background:#222;
+    background:var(--black);
 }
 
 html::-webkit-scrollbar-thumb{
@@ -36,7 +38,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#111;
+    background:var(--black);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -48,8 +50,8 @@ section{
 
 .btn{
     padding:.7rem 3rem;
-    background:#333;
-    color:#fff;
+    background:var(--black);
+    color:var(--white);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -70,8 +72,8 @@ section{
     margin:0 6rem;
     font-size: 4rem;
     padding:1rem;
-    border-bottom: .1rem solid #fff4;
-    color:#fff;
+    border-bottom: .1rem solid #32cd32;
+    color:var(--white);
 }
 
 .heading span{
@@ -84,7 +86,7 @@ header{
     z-index: 1000;
     height:100%;
     width:35rem;
-    background:#1a1a1a;
+    background:var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,12 +105,12 @@ header .user img{
 
 header .user .name{
     font-size: 3.5rem;
-    color:#fff;
+    color:var(--black);
 }
 
 header .user .post{
     font-size: 2rem;
-    color:#eee;
+    color:var(--white);
 }
 
 header .navbar{
@@ -125,8 +127,8 @@ header .navbar ul li a{
     display: block;
     padding:1rem;
     margin:1.5rem 0;
-    background:#333;
-    color:#fff;
+    background:var(--black);
+    color:var(--white);
     font-size: 2rem;
     border-radius: 5rem;
 }
@@ -139,7 +141,7 @@ header .navbar ul li a:hover{
     position: fixed;
     top:2rem; right:2rem;
     background:#333;
-    color:#fff;
+    color:var(--white);
     cursor: pointer;
     font-size: 2.5rem;
     padding:1rem 1.5rem;
@@ -156,12 +158,12 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color:#fff;
+    color:var(--white);
 }
 
 .home h1{
     font-size:5rem;
-    color:#fff;
+    color:var(--white);
 }
 
 .home h1 span{
@@ -170,7 +172,7 @@ header .navbar ul li a:hover{
 
 .home p{
     font-size:2rem;
-    color:#eee;
+    color:var(--white);
     padding: 1rem 0;
 }
 
@@ -196,7 +198,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .info h3 span{
-    color:#eee;
+    color:var(--white);
     padding:0 .5rem;
 }
 
@@ -222,7 +224,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:var(--white);
 }
 
 .education .box-container{
@@ -238,27 +240,27 @@ header .navbar ul li a:hover{
     width:27rem;
     margin:4rem 1rem;
     padding-left: 4rem;
-    border-left: .2rem solid #fff;
+    border-left: .2rem solid #var(--white);
     position: relative;
 }
 
 .education .box-container .box span{
     font-size: 1.3rem;
     background:#222;
-    color:#fff;
+    color:var(--white);
     border-radius: 5rem;
     padding:.5rem 2.5rem;
 }
 
 .education .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:var(--white);
     padding-top: 1.5rem;
 }
 
 .education .box-container .box p{
     font-size: 1.4rem;
-    color:#eee;
+    color:var(--white);
     padding: 1rem 0;
 }
 
@@ -271,7 +273,7 @@ header .navbar ul li a:hover{
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color:#fff;
+    color:var(--white);
     background:var(--green);
 }
 
@@ -326,14 +328,10 @@ header .navbar ul li a:hover{
     padding:1.5rem;
     margin:1rem 0;
     background:#3333;
-    color:#fff;
+    color:var(--white);
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
-}
-
-.contact .row form .box::placeholder{
-    text-transform: capitalize;
 }
 
 .contact .row form .message{
@@ -342,8 +340,7 @@ header .navbar ul li a:hover{
 }
 
 .contact .row .content .title{
-    text-transform: uppercase;
-    color:#fff;
+    color:var(--white);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -352,7 +349,7 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#eee;
+    color:var(--white);
     padding:1rem 0;
     font-weight: normal;
 }

@@ -10,7 +10,6 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 <script>
@@ -32,10 +31,11 @@ alert("Welcome to my Profile Page!");
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio"> My Portfolio</a></li>
             <li><a href="#contact">Contact Me</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <button class="btn" onclick="myFunction()">Change Accent Color</button>
-            <script>function myFunction() {document.documentElement.style.setProperty('--green', '#00E7E4');}</script>            
-
+            <li><a href="resources.html">Resources</a></li>           
+            <button class="btn" onclick="light()">Light Mode</button>
+            <script>function light() {document.documentElement.style.setProperty('--white', '#080808'); document.documentElement.style.setProperty('--black', '#f0fff0');}</script>
+            <button class="btn" onclick="dark()">Dark Mode</button>
+            <script>function dark() {document.documentElement.style.setProperty('--white', '#f0fff0'); document.documentElement.style.setProperty('--black', '#080808');}</script>                          
         </ul>
     </nav>
 
