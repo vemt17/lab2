@@ -32,9 +32,9 @@ alert("Welcome to my Profile Page!");
             <li><a href="#portfolio"> My Portfolio</a></li>
             <li><a href="#contact">Contact Me</a></li>
             <li><a href="resources.html">Resources</a></li>           
-            <button class="btn" onclick="light()">Light Mode</button>
+            <button class="btn" onclick="light()"><i class="fas fa-sun"></i></button>
             <script>function light() {document.documentElement.style.setProperty('--white', '#080808'); document.documentElement.style.setProperty('--black', '#f0fff0');}</script>
-            <button class="btn" onclick="dark()">Dark Mode</button>
+            <button class="btn" onclick="dark()"><i class="fas fa-moon"></i></button>
             <script>function dark() {document.documentElement.style.setProperty('--white', '#f0fff0'); document.documentElement.style.setProperty('--black', '#080808');}</script>                          
         </ul>
     </nav>
@@ -51,8 +51,9 @@ alert("Welcome to my Profile Page!");
 
     <h3>Hello There!</h3>
     <h1>I am<span> Vince Edward Tan</span></h1>
-    <p>I'm currently in my 2nd year studying Information Technology at Asia Pacific College. I have experienced programming using Java, Python and a little bit of web developing with HTML, CSS, and SQL. I like to play video games and watch anime, TV series, and movies on my free time.
+    <p id="demo">I'm currently in my 2nd year studying Information Technology at Asia Pacific College. I have experienced programming using Java, Python and a little bit of web developing with HTML, CSS, and SQL. I like to play video games and watch anime, TV series, and movies on my free time.
     </p>
+    <button class="btn" onclick="document.getElementById('demo').style.display='none'">Hide</button>
 </section>
 
 <!-- home section ends -->

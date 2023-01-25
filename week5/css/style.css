@@ -50,7 +50,7 @@ section{
 
 .btn{
     padding:.7rem 3rem;
-    background:var(--black);
+    background:var(--green);
     color:var(--white);
     cursor: pointer;
     margin-top: 1rem;
