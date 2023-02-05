@@ -135,14 +135,13 @@ alert("Welcome to my Profile Page!");
     </div>
     <?php
     // define variables and set to empty values
-    $name = $email = $gender = $comment = $website = "";
+    $name = $email = $comment = $website = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $name = test_input($_POST["name"]);
       $email = test_input($_POST["email"]);
       $website = test_input($_POST["website"]);
       $comment = test_input($_POST["comment"]);
-      $gender = test_input($_POST["gender"]);
     }
 
     function test_input($data) {
@@ -154,20 +153,15 @@ alert("Welcome to my Profile Page!");
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-      Name: <input type="text" name="name">
+      Name: <input type="text" name="name" placeholder="Name" class="box">
       <br><br>
-      E-mail: <input type="text" name="email">
+      E-mail: <input type="email" name="email" placeholder="Email" class="box">
       <br><br>
-      Website: <input type="text" name="website">
+      Website: <input type="text" name="website" placeholder="Project" class="box">
       <br><br>
-      Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+      Comment: <textarea name="comment" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
       <br><br>
-      Gender:
-      <input type="radio" name="gender" value="female">Female
-      <input type="radio" name="gender" value="male">Male
-      <input type="radio" name="gender" value="other">Other
-      <br><br>
-      <input type="submit" name="submit" value="Submit">  
+      <button type="submit" name="submit" value="Submit" class="btn"> Submit <i class="fas fa-paper-plane"></i> </button>
     </form>
 
     <?php
@@ -179,8 +173,6 @@ alert("Welcome to my Profile Page!");
     echo $website;
     echo "<br>";
     echo $comment;
-    echo "<br>";
-    echo $gender;
     ?>   
 </div>
 </section>
