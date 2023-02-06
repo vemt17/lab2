@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<script>
-alert("Welcome to my Profile Page!");
-</script>
     
 <!-- header section starts  -->
 
@@ -31,7 +28,7 @@ alert("Welcome to my Profile Page!");
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio"> My Portfolio</a></li>
             <li><a href="#contact">Contact Me</a></li>
-            <li><a href="resources.html">Resources</a></li>           
+            <li><a href="resources.php">Resources</a></li>           
             <button class="btn" onclick="light()"><i class="fas fa-sun"></i></button>
             <script>function light() {document.documentElement.style.setProperty('--white', '#080808'); document.documentElement.style.setProperty('--black', '#f0fff0');}</script>
             <button class="btn" onclick="dark()"><i class="fas fa-moon"></i></button>
@@ -135,13 +132,13 @@ alert("Welcome to my Profile Page!");
     </div>
     <?php
     // define variables and set to empty values
-    $name = $email = $comment = $website = "";
+    $name = $email = $project = $message = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $name = test_input($_POST["name"]);
       $email = test_input($_POST["email"]);
-      $website = test_input($_POST["website"]);
-      $comment = test_input($_POST["comment"]);
+      $project = test_input($_POST["project"]);
+      $message = test_input($_POST["message"]);
     }
 
     function test_input($data) {
@@ -152,28 +149,17 @@ alert("Welcome to my Profile Page!");
     }
     ?>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-      Name: <input type="text" name="name" placeholder="Name" class="box">
+    <form method="post" action="form.php">  
+      <input type="text" name="name" placeholder="Name" class="box">
       <br><br>
-      E-mail: <input type="email" name="email" placeholder="Email" class="box">
+      <input type="email" name="email" placeholder="Email" class="box">
       <br><br>
-      Website: <input type="text" name="website" placeholder="Project" class="box">
+      <input type="text" name="project" placeholder="Project" class="box">
       <br><br>
-      Comment: <textarea name="comment" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
+      <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
       <br><br>
       <button type="submit" name="submit" value="Submit" class="btn"> Submit <i class="fas fa-paper-plane"></i> </button>
-    </form>
-
-    <?php
-    echo "<h2>Your Input:</h2>";
-    echo $name;
-    echo "<br>";
-    echo $email;
-    echo "<br>";
-    echo $website;
-    echo "<br>";
-    echo $comment;
-    ?>   
+    </form>  
 </div>
 </section>
 
