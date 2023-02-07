@@ -28,7 +28,8 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio"> My Portfolio</a></li>
             <li><a href="#contact">Contact Me</a></li>
-            <li><a href="resources.php">Resources</a></li>           
+            <li><a href="resources.php">Resources</a></li>
+            <li><a href="guests.php">Guests</a></li>           
             <button class="btn" onclick="light()"><i class="fas fa-sun"></i></button>
             <script>function light() {document.documentElement.style.setProperty('--white', '#080808'); document.documentElement.style.setProperty('--black', '#f0fff0');}</script>
             <button class="btn" onclick="dark()"><i class="fas fa-moon"></i></button>
