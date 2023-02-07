@@ -31,6 +31,7 @@
     if($rs)
     {
         echo '<script>alert("Form Submitted!")</script>';
+        echo '<a href="index.php">Go Back</a>';
     }
   
     // close connection
