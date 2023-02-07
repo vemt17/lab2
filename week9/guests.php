@@ -65,9 +65,9 @@
         <?php
         // database details
         $host = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "myDB";
+        $username = "webprogmi211";
+        $password = "webprogmi211";
+        $dbname = "webprogmi211";
 
         $conn = mysqli_connect($host, $username, $password, $dbname);
 
@@ -76,7 +76,7 @@
           die('Could not connect: ' . mysql_error());
           }
 
-        $result = mysqli_query($conn,"SELECT * FROM myguests");
+        $result = mysqli_query($conn,"SELECT * FROM vmtan_myguests");
 
         echo "<table>
         <tr>

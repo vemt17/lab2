@@ -10,9 +10,9 @@
 
     // database details
     $host = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "myDB";
+    $username = "webprogmi211";
+    $password = "webprogmi211";
+    $dbname = "webprogmi211";
 
     // creating a connection
     $conn = mysqli_connect($host, $username, $password, $dbname);
@@ -24,7 +24,7 @@
     }
 
     // using sql to create a data entry query
-    $sql = "INSERT INTO myguests (id, name, email, project, message) VALUES ('0', '$name', '$email', '$project', '$message')";
+    $sql = "INSERT INTO vmtan_myguests (id, name, email, project, message) VALUES ('0', '$name', '$email', '$project', '$message')";
   
     // send query to the database to add values and confirm if successful
     $rs = mysqli_query($conn, $sql);
